@@ -2,6 +2,7 @@
 
 require_once '../vendor/autoload.php';
 
-$product = Container::newProduct('MySQL');
+$container = Source\ServiceContainer::getInstance();
+$productRepo = $container->getContainer()['productRepository'];
 
-var_dump($product->all());
+var_dump($productRepo->all());

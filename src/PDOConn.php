@@ -1,5 +1,7 @@
 <?php
 
+namespace Source;
+
 class PDOConn implements IConn{
     
     const TIPO_BANCO_MYSQL = 'mysql';
@@ -20,7 +22,7 @@ class PDOConn implements IConn{
 
     /** @return \PDO */
     public function connect() {
-        return new PDO("{$this->tipoBanco}:host={$this->host};"
+        return new \PDO("{$this->tipoBanco}:host={$this->host};"
         . "dbname={$this->nomeBanco};charset=utf8;", $this->user, $this->pass);
     }
 

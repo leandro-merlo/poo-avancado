@@ -1,5 +1,7 @@
 <?php
 
+namespace Source;
+
 class MySQLConn implements IConn{
 
     private $host;

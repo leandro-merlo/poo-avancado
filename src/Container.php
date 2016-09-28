@@ -1,5 +1,7 @@
 <?php
 
+namespace Source;
+
 const DB_TYPE_PDO = 'PDO';
 const DB_TYPE_MYSQL = 'MySQL';
 
